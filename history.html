@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>飲食料品製造業特定技能1号ー模擬試験第4回目の結果</title>
+    <title>飲食料品製造業特定技能1号ー模擬試験第5回目の結果</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
@@ -154,7 +154,7 @@
 <body>
     <div class="header">
         <h1>飲食料品製造業特定技能1号</h1>
-        <h2>模擬試験第4回目の結果</h2>
+        <h2>模擬試験第5回目の結果</h2>
     </div>
 
     <div class="search-section">
@@ -241,7 +241,7 @@
             const historyTableBody = document.getElementById('history-table-body');
             const messageDiv = document.getElementById('message');
             let testHistory = [];
-            const collectionName = 'testHistorytokuteithucphamde4';
+            const collectionName = 'testHistorytokuteithucphamde5';
 
             if (!db) {
                 messageDiv.textContent = 'Không thể kết nối với cơ sở dữ liệu. Vui lòng kiểm tra cấu hình Firebase.';
@@ -249,7 +249,7 @@
             }
 
             try {
-                // Fetch data from testHistorytokuteithucphamde4
+                // Fetch data from testHistorytokuteithucphamde5
                 const snapshot = await getDocs(collection(db, collectionName));
                 testHistory = snapshot.docs.map(doc => ({
                     id: doc.id,
